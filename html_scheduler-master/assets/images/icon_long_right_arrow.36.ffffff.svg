@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+<style>
+	g path { stroke: none; }
+</style>
+<g class="root" id="long_right_arrow" data-name="long-right-arrow" fill="#ffffff" stroke="#ffffff">
+	<path d="M3.791 16.297L27.281 16.297L19.491 9.725C17.606 8.238 19.994 5.509 21.753 6.997L33.434 16.669C34.188 17.288 34.188 18.65 33.434 19.394L21.753 28.941C19.994 30.55 17.606 27.825 19.491 26.338L27.281 19.766L3.791 19.766C1.403 19.766 1.403 16.297 3.791 16.297Z" />
+</g>
+</svg>
