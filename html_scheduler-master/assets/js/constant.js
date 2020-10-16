@@ -316,7 +316,7 @@ async function curWeek(currMonth, currDate, i) {
             `<label id="scheduleChildLabel${currMonth}_${currDate}_${i}_1" for="scheduleChildInput${currMonth}_${currDate}_${i}_1" title="${
                 aMonths[currMonth - 1]
             } ${currDate}, ${cYear} 8:00 AM - 10:00 AM" tabindex='0' class="${
-                cHour >= 10 && currentDateTime.getDate() === currDate ? "unavailable" : ""
+                cHour >= 8 && currentDateTime.getDate() === currDate ? "unavailable" : ""
             }">8:00 AM - 10:00 AM</label>`
         )
     await document
@@ -338,7 +338,7 @@ async function curWeek(currMonth, currDate, i) {
             `<label id="scheduleChildLabel${currMonth}_${currDate}_${i}_2" for="scheduleChildInput${currMonth}_${currDate}_${i}_2" title="${
                 aMonths[currMonth - 1]
             } ${currDate}, ${cYear} 10:00 AM - 12:00 PM" tabindex='0' class="${
-                cHour >= 12 && currentDateTime.getDate() === currDate ? "unavailable" : ""
+                cHour >= 10 && currentDateTime.getDate() === currDate ? "unavailable" : ""
             }">10:00 AM - 12:00 PM</label>`
         )
     await document
@@ -361,7 +361,7 @@ async function curWeek(currMonth, currDate, i) {
             `<label id="scheduleChildLabel${currMonth}_${currDate}_${i}_3" for="scheduleChildInput${currMonth}_${currDate}_${i}_3" title="${
                 aMonths[currMonth - 1]
             } ${currDate}, ${cYear} 12:00 PM - 2:00 PM" tabindex='0' class="${
-                cHour >= 14 && currentDateTime.getDate() === currDate ? "unavailable" : ""
+                cHour >= 12 && currentDateTime.getDate() === currDate ? "unavailable" : ""
             }">12:00 PM - 2:00 PM</label>`
         )
     await document
@@ -383,7 +383,7 @@ async function curWeek(currMonth, currDate, i) {
             `<label id="scheduleChildLabel${currMonth}_${currDate}_${i}_4" for="scheduleChildInput${currMonth}_${currDate}_${i}_4" title="${
                 aMonths[currMonth - 1]
             } ${currDate}, ${cYear} 2:00 PM - 4:00 PM" tabindex='0' class="${
-                cHour >= 16 && currentDateTime.getDate() === currDate ? "unavailable" : ""
+                cHour >= 14 && currentDateTime.getDate() === currDate ? "unavailable" : ""
             }">2:00 PM - 4:00 PM</label>`
         )
     await document
@@ -406,7 +406,7 @@ async function curWeek(currMonth, currDate, i) {
             `<label id="scheduleChildLabel${currMonth}_${currDate}_${i}_5" for="scheduleChildInput${currMonth}_${currDate}_${i}_5" title="${
                 aMonths[currMonth - 1]
             } ${currDate}, ${cYear} 4:00 PM - 6:00 PM" tabindex='0' class="${
-                cHour >= 18 && currentDateTime.getDate() === currDate ? "unavailable" : ""
+                cHour >= 16 && currentDateTime.getDate() === currDate ? "unavailable" : ""
             }">4:00 PM - 6:00 PM</label>`
         )
     await document
@@ -717,4 +717,5 @@ document
             ? x[1]
             : "(" + x[1] + ") " + x[2] + (x[3] ? "-" + x[3] : "")
     })
+
 
