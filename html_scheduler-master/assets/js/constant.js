@@ -549,8 +549,8 @@ function handleRequest() {
 
     // const emailTo = "emily@congruentstory.com"
     // const emailCC = "emily@congruentstory.com"
-    const emailTo = "seniordev119@gmail.com"
-    const emailCC = "seniordev119@gmail.com"
+    const emailTo = "info@superiordrains.com"
+    const emailCC = "info@superiordrains.com"
     const emailSub = "Schedule"
     const emailBody = `${time} \n FirstName: ${sch_firstName} \n LasttName: ${sch_lastName} \n Email: ${sch_email} \n Phone: ${sch_phone} \n Address: ${sch_address} \n City: ${sch_city} \n State: ${sch_state} \n ZipCode: ${sch_zipCode} \n ServiceType: ${sch_serviceType} \n LeadType: ${sch_leadTypeID} \n Message: ${sch_message}`
 
