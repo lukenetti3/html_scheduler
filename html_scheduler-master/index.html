@@ -125,358 +125,145 @@
                                     data-panel="2"
                                     data-tab="Step 2"
                                 >
-                                    <fieldset>
-                                        <div class="cursor-follow"></div>
-                                        <ul>
-                                            <li
-                                                class="half"
-                                                onfocusout="handleValidate(event)"
-                                            >
-                                                <label
-                                                    class="hide"
-                                                    for="SchedulerLocalContactForm_ITM0_FirstName"
-                                                    >First Name:</label
-                                                >
-                                                <div class="input-text">
-                                                    <input
-                                                        placeholder="First Name"
-                                                        required="required"
-                                                        type="text"
-                                                        id="SchedulerLocalContactForm_ITM0_FirstName"
-                                                        value=""
-                                                    />
-                                                    <div
-                                                        class="validation"
-                                                        for="SchedulerLocalContactForm_ITM0_FirstName"
-                                                        data-type="valueMissing"
-                                                    >
-                                                        Please enter your first
-                                                        name.
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li
-                                                class="half"
-                                                onfocusout="handleValidate(event)"
-                                            >
-                                                <label
-                                                    class="hide"
-                                                    for="SchedulerLocalContactForm_ITM0_LastName"
-                                                    >Last Name:</label
-                                                >
-                                                <div class="input-text">
-                                                    <input
-                                                        placeholder="Last Name"
-                                                        required="required"
-                                                        type="text"
-                                                        id="SchedulerLocalContactForm_ITM0_LastName"
-                                                        value=""
-                                                    />
-                                                    <div
-                                                        class="validation"
-                                                        for="SchedulerLocalContactForm_ITM0_LastName"
-                                                        data-type="valueMissing"
-                                                    >
-                                                        Please enter your last
-                                                        name.
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li
-                                                class="full"
-                                                onfocusout="validateEmail(event)"
-                                            >
-                                                <label
-                                                    class="hide"
-                                                    for="SchedulerLocalContactForm_ITM0_EmailAddress"
-                                                    >Email:</label
-                                                >
-                                                <div class="input-text">
-                                                    <input
-                                                        placeholder="Email"
-                                                        required="required"
-                                                        type="email"
-                                                        id="SchedulerLocalContactForm_ITM0_EmailAddress"
-                                                        value=""
-                                                    />
-                                                    <div
-                                                        class="validation"
-                                                        for="SchedulerLocalContactForm_ITM0_EmailAddress"
-                                                        data-type="typeMismatch"
-                                                    >
-                                                        This isn't a valid email
-                                                        address.
-                                                    </div>
-                                                    <div
-                                                        class="validation"
-                                                        for="SchedulerLocalContactForm_ITM0_EmailAddress"
-                                                        data-type="valueMissing"
-                                                    >
-                                                        Please enter your email
-                                                        address.
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li
-                                                class="full"
-                                                onfocusout="handleValidate(event)"
-                                            >
-                                                <label
-                                                    class="hide"
-                                                    for="SchedulerLocalContactForm_ITM0_Phone"
-                                                    >Phone:</label
-                                                >
-                                                <div class="input-text">
-                                                    <input
-                                                        id="SchedulerLocalContactForm_ITM0_Phone"
-                                                        type="tel"
-                                                        placeholder="Phone"
-                                                        pattern="[(]\d{3}[)][\s]\d{3}[\-]\d{4}"
-                                                        class="phone-mask"
-                                                        required="required"
-                                                        value=""
-                                                        onkeypress="return onlyNumberKey(event)"
-                                                    />
-                                                    <div
-                                                        class="validation"
-                                                        for="SchedulerLocalContactForm_ITM0_Phone"
-                                                        data-type="typeMismatch"
-                                                    >
-                                                        This isn't a valid phone
-                                                        number.
-                                                    </div>
-                                                    <div
-                                                        class="validation"
-                                                        for="SchedulerLocalContactForm_ITM0_Phone"
-                                                        data-type="valueMissing"
-                                                    >
-                                                        Please enter your phone
-                                                        number.
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li
-                                                class="full"
-                                                onfocusout="handleValidate(event)"
-                                            >
-                                                <label
-                                                    class="hide"
-                                                    for="SchedulerLocalContactForm_ITM0_Address"
-                                                    >Address:</label
-                                                >
-                                                <div class="input-text">
-                                                    <input
-                                                        placeholder="Address"
-                                                        required="required"
-                                                        type="text"
-                                                        id="SchedulerLocalContactForm_ITM0_Address"
-                                                        value=""
-                                                    />
-                                                    <div
-                                                        class="validation"
-                                                        for="SchedulerLocalContactForm_ITM0_Address"
-                                                        data-type="valueMissing"
-                                                    >
-                                                        Please enter your
-                                                        address.
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li
-                                                class="full"
-                                                onfocusout="handleValidate(event)"
-                                            >
-                                                <label
-                                                    class="hide"
-                                                    for="SchedulerLocalContactForm_ITM0_City"
-                                                    >City:</label
-                                                >
-                                                <div class="input-text">
-                                                    <input
-                                                        placeholder="City"
-                                                        required="required"
-                                                        type="text"
-                                                        id="SchedulerLocalContactForm_ITM0_City"
-                                                        value=""
-                                                    />
-                                                    <div
-                                                        class="validation"
-                                                        for="SchedulerLocalContactForm_ITM0_City"
-                                                        data-type="valueMissing"
-                                                    >
-                                                        Please enter your city
-                                                        name.
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li
-                                                class="half select"
-                                                onfocusout="handleValidate(event)"
-                                            >
-                                                <label
-                                                    class="hide"
-                                                    for="SchedulerLocalContactForm_ITM0_State"
-                                                    >State:</label
-                                                >
-                                                <div class="input-text">
-                                                    <select
-                                                        id="SchedulerLocalContactForm_ITM0_State"
-                                                        required="required"
-                                                    ></select>
-                                                    <svg
-                                                        viewBox="0 0 36 36"
-                                                        data-use="/cms/svg/site/mjsej3h07k_.36.svg#down_arrow"
-                                                    >
-                                                        <path
-                                                            d="M20.388 19.231L29.581 8.316C31.662 5.675 35.481 9.022 33.397 11.484L19.866 27.859C19 28.916 17.091 28.916 16.05 27.859L2.691 11.484C0.434 9.022 4.25 5.675 6.334 8.316L15.528 19.231C15.528 19.231 16.719 21.366 17.922 21.366C19.147 21.366 20.388 19.231 20.388 19.231Z"
-                                                        ></path>
-                                                    </svg>
-                                                    <div
-                                                        class="validation"
-                                                        for="SchedulerLocalContactForm_ITM0_State"
-                                                        data-type="valueMissing"
-                                                    >
-                                                        Please select your
-                                                        state.
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li
-                                                class="half"
-                                                onfocusout="handleValidate(event)"
-                                            >
-                                                <label
-                                                    class="hide"
-                                                    for="SchedulerLocalContactForm_ITM0_ZipCode"
-                                                    >Zip Code:</label
-                                                >
-                                                <div class="input-text">
-                                                    <input
-                                                        placeholder="Zip Code"
-                                                        required="required"
-                                                        type="text"
-                                                        id="SchedulerLocalContactForm_ITM0_ZipCode"
-                                                        value=""
-                                                        maxlength="6"
-                                                        onkeypress="return onlyNumberKey(event)"
-                                                    />
-                                                    <div
-                                                        class="validation"
-                                                        for="SchedulerLocalContactForm_ITM0_ZipCode"
-                                                        data-type="valueMissing"
-                                                    >
-                                                        Please enter your zip
-                                                        code.
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li
-                                                class="full select"
-                                                onfocusout="handleValidate(event)"
-                                            >
-                                                <label
-                                                    class="hide"
-                                                    for="SchedulerLocalContactForm_ITM0_ServiceType"
-                                                    >Service Type?</label
-                                                >
-                                                <div class="input-text">
-                                                    <select
-                                                        id="SchedulerLocalContactForm_ITM0_ServiceType"
-                                                        required="required"
-                                                    ></select>
-                                                    <svg 
-                                                        viewBox="0 0 36 36"
-                                                        data-use="/cms/svg/site/mjsej3h07k_.36.svg#down_arrow"
-                                                    >
-                                                        <path
-                                                            d="M20.388 19.231L29.581 8.316C31.662 5.675 35.481 9.022 33.397 11.484L19.866 27.859C19 28.916 17.091 28.916 16.05 27.859L2.691 11.484C0.434 9.022 4.25 5.675 6.334 8.316L15.528 19.231C15.528 19.231 16.719 21.366 17.922 21.366C19.147 21.366 20.388 19.231 20.388 19.231Z"
-                                                        ></path>
-                                                    </svg>
-                                                    <div
-                                                        class="validation"
-                                                        for="SchedulerLocalContactForm_ITM0_ServiceType"
-                                                        data-type="valueMissing"
-                                                    >
-                                                        Please make a selection.
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li
-                                                class="full select"
-                                                onfocusout="handleValidate(event)"
-                                            >
-                                                <label
-                                                    class="hide"
-                                                    for="SchedulerLocalContactForm_ITM0_LeadTypeID"
-                                                    >Are you a new
-                                                    customer?</label
-                                                >
-                                                <div class="input-text">
-                                                    <select
-                                                        id="SchedulerLocalContactForm_ITM0_LeadTypeID"
-                                                        required="required"
-                                                    ></select>
-                                                    <svg
-                                                        viewBox="0 0 36 36"
-                                                        data-use="/cms/svg/site/mjsej3h07k_.36.svg#down_arrow"
-                                                    >
-                                                        <path
-                                                            d="M20.388 19.231L29.581 8.316C31.662 5.675 35.481 9.022 33.397 11.484L19.866 27.859C19 28.916 17.091 28.916 16.05 27.859L2.691 11.484C0.434 9.022 4.25 5.675 6.334 8.316L15.528 19.231C15.528 19.231 16.719 21.366 17.922 21.366C19.147 21.366 20.388 19.231 20.388 19.231Z"
-                                                        ></path>
-                                                    </svg>
-                                                    <div
-                                                        class="validation"
-                                                        for="SchedulerLocalContactForm_ITM0_LeadTypeID"
-                                                        data-type="valueMissing"
-                                                    >
-                                                        Please make a selection.
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li
-                                                class="full"
-                                                onfocusout="handleValidate(event)"
-                                            >
-                                                <label
-                                                    class="hide"
-                                                    for="SchedulerLocalContactForm_ITM0_Message"
-                                                    >How can we help?</label
-                                                >
-                                                <div class="input-text">
-                                                    <textarea
-                                                        placeholder="How can we help?"
-                                                        required="required"
-                                                        type="text"
-                                                        id="SchedulerLocalContactForm_ITM0_Message"
-                                                    ></textarea>
-                                                    <div
-                                                        class="validation"
-                                                        for="SchedulerLocalContactForm_ITM0_Message"
-                                                        data-type="valueMissing"
-                                                    >
-                                                        Please enter a message.
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </fieldset>
-                                    <div class="btn-con button-wrap">
-                                        <a
-                                            class="btn v2 back ui-tab"
-                                            data-tab="Step 1"
-                                            onclick="handlePrev()"
-                                            >Previous</a
-                                        >
-                                        <button
-                                            class="btn v2"
-                                            onclick="handleRequest()"
-                                            id="SchedulerLocalContactForm_ITM0_ctl14"
-                                            name="SchedulerLocalContactForm$ITM0$ctl14"
-                                            data-commandname="Update"
-                                        >
-                                            Request Now
-                                        </button>
-                                    </div>
+                                    
+                                    <form action="https://usebasin.com/f/4b21513afd39" method="POST">
+   <fieldset>
+     <div class="cursor-follow"></div>
+     <ul>
+       <li class="half" onfocusout="handleValidate(event)">
+         <label class="hide" for="SchedulerLocalContactForm_ITM0_FirstName">First Name:</label>
+         <div class="input-text">
+           <input placeholder="First Name" required="required" type="text" id="SchedulerLocalContactForm_ITM0_FirstName" value="" name="First Name" />
+           <div class="validation" for="SchedulerLocalContactForm_ITM0_FirstName" data-type="valueMissing">
+             Please enter your first
+             name.
+           </div>
+         </div>
+       </li>
+       <li class="half" onfocusout="handleValidate(event)">
+         <label class="hide" for="SchedulerLocalContactForm_ITM0_LastName">Last Name:</label>
+         <div class="input-text">
+           <input placeholder="Last Name" required="required" type="text" id="SchedulerLocalContactForm_ITM0_LastName" value="" name="Last Name" />
+           <div class="validation" for="SchedulerLocalContactForm_ITM0_LastName" data-type="valueMissing">
+             Please enter your last
+             name.
+           </div>
+         </div>
+       </li>
+       <li class="full" onfocusout="validateEmail(event)">
+         <label class="hide" for="SchedulerLocalContactForm_ITM0_EmailAddress">Email:</label>
+         <div class="input-text">
+           <input placeholder="Email" required="required" type="email" id="SchedulerLocalContactForm_ITM0_EmailAddress" value="" name="Email" />
+           <div class="validation" for="SchedulerLocalContactForm_ITM0_EmailAddress" data-type="typeMismatch">
+             This isn't a valid email
+             address.
+           </div>
+           <div class="validation" for="SchedulerLocalContactForm_ITM0_EmailAddress" data-type="valueMissing">
+             Please enter your email
+             address.
+           </div>
+         </div>
+       </li>
+       <li class="full" onfocusout="handleValidate(event)">
+         <label class="hide" for="SchedulerLocalContactForm_ITM0_Phone">Phone:</label>
+         <div class="input-text">
+           <input id="SchedulerLocalContactForm_ITM0_Phone" type="tel" placeholder="Phone" pattern="[(]\d{3}[)][\s]\d{3}[\-]\d{4}" class="phone-mask" required="required" value="" onkeypress="return onlyNumberKey(event)" name="Phone" />
+           <div class="validation" for="SchedulerLocalContactForm_ITM0_Phone" data-type="typeMismatch">
+             This isn't a valid phone
+             number.
+           </div>
+           <div class="validation" for="SchedulerLocalContactForm_ITM0_Phone" data-type="valueMissing">
+             Please enter your phone
+             number.
+           </div>
+         </div>
+       </li>
+       <li class="full" onfocusout="handleValidate(event)">
+         <label class="hide" for="SchedulerLocalContactForm_ITM0_Address">Address:</label>
+         <div class="input-text">
+           <input placeholder="Address" required="required" type="text" id="SchedulerLocalContactForm_ITM0_Address" value="" name="Address" />
+           <div class="validation" for="SchedulerLocalContactForm_ITM0_Address" data-type="valueMissing">
+             Please enter your
+             address.
+           </div>
+         </div>
+       </li>
+       <li class="full" onfocusout="handleValidate(event)">
+         <label class="hide" for="SchedulerLocalContactForm_ITM0_City">City:</label>
+         <div class="input-text">
+           <input placeholder="City" required="required" type="text" id="SchedulerLocalContactForm_ITM0_City" value="" name="City" />
+           <div class="validation" for="SchedulerLocalContactForm_ITM0_City" data-type="valueMissing">
+             Please enter your city
+             name.
+           </div>
+         </div>
+       </li>
+       <li class="half select" onfocusout="handleValidate(event)">
+         <label class="hide" for="SchedulerLocalContactForm_ITM0_State">State:</label>
+         <div class="input-text">
+           <select id="SchedulerLocalContactForm_ITM0_State" required="required" name="State"></select>
+           <svg viewBox="0 0 36 36" data-use="/cms/svg/site/mjsej3h07k_.36.svg#down_arrow">
+             <path d="M20.388 19.231L29.581 8.316C31.662 5.675 35.481 9.022 33.397 11.484L19.866 27.859C19 28.916 17.091 28.916 16.05 27.859L2.691 11.484C0.434 9.022 4.25 5.675 6.334 8.316L15.528 19.231C15.528 19.231 16.719 21.366 17.922 21.366C19.147 21.366 20.388 19.231 20.388 19.231Z"></path>
+           </svg>
+           <div class="validation" for="SchedulerLocalContactForm_ITM0_State" data-type="valueMissing">
+             Please select your
+             state.
+           </div>
+         </div>
+       </li>
+       <li class="half" onfocusout="handleValidate(event)">
+         <label class="hide" for="SchedulerLocalContactForm_ITM0_ZipCode">Zip Code:</label>
+         <div class="input-text">
+           <input placeholder="Zip Code" required="required" type="text" id="SchedulerLocalContactForm_ITM0_ZipCode" value="" maxlength="6" onkeypress="return onlyNumberKey(event)" name="Zip Code" />
+           <div class="validation" for="SchedulerLocalContactForm_ITM0_ZipCode" data-type="valueMissing">
+             Please enter your zip
+             code.
+           </div>
+         </div>
+       </li>
+       <li class="full select" onfocusout="handleValidate(event)">
+         <label class="hide" for="SchedulerLocalContactForm_ITM0_ServiceType">Service Type?</label>
+         <div class="input-text">
+           <select id="SchedulerLocalContactForm_ITM0_ServiceType" required="required" name="Service Type"></select>
+           <svg viewBox="0 0 36 36" data-use="/cms/svg/site/mjsej3h07k_.36.svg#down_arrow">
+             <path d="M20.388 19.231L29.581 8.316C31.662 5.675 35.481 9.022 33.397 11.484L19.866 27.859C19 28.916 17.091 28.916 16.05 27.859L2.691 11.484C0.434 9.022 4.25 5.675 6.334 8.316L15.528 19.231C15.528 19.231 16.719 21.366 17.922 21.366C19.147 21.366 20.388 19.231 20.388 19.231Z"></path>
+           </svg>
+           <div class="validation" for="SchedulerLocalContactForm_ITM0_ServiceType" data-type="valueMissing">
+             Please make a selection.
+           </div>
+         </div>
+       </li>
+       <li class="full select" onfocusout="handleValidate(event)">
+         <label class="hide" for="SchedulerLocalContactForm_ITM0_LeadTypeID">Are you a new
+           customer?</label>
+         <div class="input-text">
+           <select id="SchedulerLocalContactForm_ITM0_LeadTypeID" required="required" name="New Customer"></select>
+           <svg viewBox="0 0 36 36" data-use="/cms/svg/site/mjsej3h07k_.36.svg#down_arrow">
+             <path d="M20.388 19.231L29.581 8.316C31.662 5.675 35.481 9.022 33.397 11.484L19.866 27.859C19 28.916 17.091 28.916 16.05 27.859L2.691 11.484C0.434 9.022 4.25 5.675 6.334 8.316L15.528 19.231C15.528 19.231 16.719 21.366 17.922 21.366C19.147 21.366 20.388 19.231 20.388 19.231Z"></path>
+           </svg>
+           <div class="validation" for="SchedulerLocalContactForm_ITM0_LeadTypeID" data-type="valueMissing">
+             Please make a selection.
+           </div>
+         </div>
+       </li>
+       <li class="full" onfocusout="handleValidate(event)">
+         <label class="hide" for="SchedulerLocalContactForm_ITM0_Message">How can we help?</label>
+         <div class="input-text">
+           <textarea placeholder="How can we help?" required="required" type="text" id="SchedulerLocalContactForm_ITM0_Message" name="How can we help?"></textarea>
+           <div class="validation" for="SchedulerLocalContactForm_ITM0_Message" data-type="valueMissing">
+             Please enter a message.
+           </div>
+         </div>
+       </li>
+     </ul>
+   </fieldset>
+   <div class="btn-con button-wrap">
+     <a class="btn v2 back ui-tab" data-tab="Step 1" onclick="handlePrev()">Previous</a>
+     <button class="btn v2" onclick="handleRequest()" id="SchedulerLocalContactForm_ITM0_ctl14" name="SchedulerLocalContactForm$ITM0$ctl14" data-commandname="Update">
+       Request Now
+     </button>
+   </div>
+ </form>
                                 </div>
                             </div>
                         </div>
