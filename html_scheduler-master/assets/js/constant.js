@@ -549,21 +549,21 @@ function handleRequest() {
 
 //     // const emailTo = "emily@congruentstory.com"
 //     // const emailCC = "emily@congruentstory.com"
-    const emailTo = "info@superiordrains.com"
-    const emailCC = "info@superiordrains.com"
-    const emailSub = "Schedule"
-    const emailBody = `${time} \n FirstName: ${sch_firstName} \n LasttName: ${sch_lastName} \n Email: ${sch_email} \n Phone: ${sch_phone} \n Address: ${sch_address} \n City: ${sch_city} \n State: ${sch_state} \n ZipCode: ${sch_zipCode} \n ServiceType: ${sch_serviceType} \n LeadType: ${sch_leadTypeID} \n Message: ${sch_message}`
+//     const emailTo = "info@superiordrains.com"
+//     const emailCC = "info@superiordrains.com"
+//     const emailSub = "Schedule"
+//     const emailBody = `${time} \n FirstName: ${sch_firstName} \n LasttName: ${sch_lastName} \n Email: ${sch_email} \n Phone: ${sch_phone} \n Address: ${sch_address} \n City: ${sch_city} \n State: ${sch_state} \n ZipCode: ${sch_zipCode} \n ServiceType: ${sch_serviceType} \n LeadType: ${sch_leadTypeID} \n Message: ${sch_message}`
 
-    window.open(
-        "mailto:" +
-            emailTo +
-            "?cc=" +
-            emailCC +
-            "&subject=" +
-            emailSub +
-            "&body=" +
-            encodeURIComponent(emailBody)
-    )
+//     window.open(
+//         "mailto:" +
+//             emailTo +
+//             "?cc=" +
+//             emailCC +
+//             "&subject=" +
+//             emailSub +
+//             "&body=" +
+//             encodeURIComponent(emailBody)
+//     )
 }
 function validateEmail(event) {
     var email = event.target.value
